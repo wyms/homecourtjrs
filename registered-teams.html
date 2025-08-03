@@ -246,14 +246,6 @@
         <p class="text-lg font-semibold text-gray-800 mb-2">16 Teams Registered</p>
         <p class="text-sm text-gray-600">8 teams in 12U Division • 8 teams in 14U Division</p>
       </div>
-
-      <!-- Random Order Generator -->
-      <div class="text-center mt-6 pt-6 border-t border-gray-200">
-        <button id="randomizeBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-colors duration-200">
-          🎲 Generate Random Order
-        </button>
-        <p class="text-sm text-gray-600 mt-2">Click to randomize team order for tournament setup</p>
-      </div>
     </div>
 
     <!-- Scoresheet Options -->
@@ -298,111 +290,13 @@
       </div>
     </div>
 
-    <!-- 20 Teams Format -->
-    <div class="bg-white rounded-lg shadow-md p-8 mt-8">
-      <h2 class="text-2xl font-bold mb-6 text-center text-rose-800">20 Teams Format</h2>
-      <p class="text-center text-gray-600 mb-4">Multiple rounds with alternating play/sit pattern + final two rounds for championship, using two courts simultaneously</p>
-      <p class="text-center text-orange-600 mb-8 font-semibold">⏱️ Note: For formats with more than 7 teams, each round will be 10-12 minutes decided by the tournament director on the day of the tournament.</p>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3">
-        <div class="bg-blue-50 rounded-lg p-3">
-          <h3 class="text-md font-bold mb-2 text-blue-800">Round 1</h3>
-          <div class="space-y-1 text-xs">
-            <div><strong>Court A:</strong> 1, 2, 3, 4, 5</div>
-            <div><strong>Court B:</strong> 6, 7, 8, 9, 10</div>
-            <div class="text-red-600 font-medium"><strong>Sitting:</strong> 11-20</div>
-          </div>
-        </div>
-        
-        <div class="bg-green-50 rounded-lg p-3">
-          <h3 class="text-md font-bold mb-2 text-green-800">Round 2</h3>
-          <div class="space-y-1 text-xs">
-            <div><strong>Court A:</strong> 11, 12, 13, 14, 15</div>
-            <div><strong>Court B:</strong> 16, 17, 18, 19, 20</div>
-            <div class="text-red-600 font-medium"><strong>Sitting:</strong> 1-10</div>
-          </div>
-        </div>
-        
-        <div class="bg-purple-50 rounded-lg p-3">
-          <h3 class="text-md font-bold mb-2 text-purple-800">Round 3</h3>
-          <div class="space-y-1 text-xs">
-            <div><strong>Court A:</strong> 1, 6, 11, 16, 2</div>
-            <div><strong>Court B:</strong> 7, 12, 17, 3, 8</div>
-            <div class="text-red-600 font-medium"><strong>Sitting:</strong> 4,5,9,10,13,14,15,18,19,20</div>
-          </div>
-        </div>
-        
-        <div class="bg-orange-50 rounded-lg p-3">
-          <h3 class="text-md font-bold mb-2 text-orange-800">Round 4</h3>
-          <div class="space-y-1 text-xs">
-            <div><strong>Court A:</strong> 4, 5, 9, 10, 13</div>
-            <div><strong>Court B:</strong> 14, 15, 18, 19, 20</div>
-            <div class="text-red-600 font-medium"><strong>Sitting:</strong> 1,2,3,6,7,8,11,12,16,17</div>
-          </div>
-        </div>
-        
-        <div class="bg-cyan-50 rounded-lg p-3">
-          <h3 class="text-md font-bold mb-2 text-cyan-800">Round 5</h3>
-          <div class="space-y-1 text-xs">
-            <div><strong>Court A:</strong> 1, 7, 13, 19, 4</div>
-            <div><strong>Court B:</strong> 10, 16, 2, 8, 14</div>
-            <div class="text-red-600 font-medium"><strong>Sitting:</strong> 3,5,6,9,11,12,15,17,18,20</div>
-          </div>
-        </div>
-        
-        <div class="bg-pink-50 rounded-lg p-3">
-          <h3 class="text-md font-bold mb-2 text-pink-800">Round 6</h3>
-          <div class="space-y-1 text-xs">
-            <div><strong>Court A:</strong> 3, 5, 6, 9, 11</div>
-            <div><strong>Court B:</strong> 12, 15, 17, 18, 20</div>
-            <div class="text-red-600 font-medium"><strong>Sitting:</strong> 1,2,4,7,8,10,13,14,16,19</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mt-8 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6 border-2 border-blue-300">
-        <h3 class="text-xl font-bold mb-4 text-blue-800">🥈 Semifinal Round (Round 7)</h3>
-        <div class="space-y-3">
-          <div class="bg-white rounded-lg p-4">
-            <h4 class="font-bold text-gray-800 mb-2">📊 Top 10 Teams (by cumulative points) advance</h4>
-            <div class="text-sm text-gray-700 space-y-1">
-              <div><strong>Court A:</strong> Teams ranked 1st, 3rd, 5th, 7th, 9th (5 teams)</div>
-              <div><strong>Court B:</strong> Teams ranked 2nd, 4th, 6th, 8th, 10th (5 teams)</div>
-              <div class="text-lg font-bold text-blue-800 mt-2">🎯 Top 5 overall from this round advance to finals!</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mt-8 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-6 border-2 border-yellow-300">
-        <h3 class="text-xl font-bold mb-4 text-yellow-800">🏆 Final Round (Round 8)</h3>
-        <div class="space-y-3">
-          <div class="bg-white rounded-lg p-4">
-            <h4 class="font-bold text-gray-800 mb-2">🌟 Top 5 Teams (from semifinal) compete</h4>
-            <div class="text-sm text-gray-700 space-y-1">
-              <div><strong>Single Court:</strong> All 5 teams play King of the Court format</div>
-              <div><strong>Duration:</strong> 10-12 minutes</div>
-              <div class="text-lg font-bold text-yellow-800 mt-2">🥇 Highest scoring team wins the tournament!</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="mt-8 bg-gray-100 rounded-lg p-6">
-        <h3 class="text-lg font-bold mb-4">Summary by Team:</h3>
-        <div class="grid md:grid-cols-4 gap-4 text-xs">
-          <div><strong>Teams 1-10:</strong> Each plays 3 rounds, sits 3 rounds</div>
-          <div><strong>Teams 11-20:</strong> Each plays 3 rounds, sits 3 rounds</div>  
-          <div><strong>Top 10:</strong> Advance to semifinal round 7</div>
-          <div><strong>Top 5:</strong> Advance to final round 8</div>
-        </div>
-        <div class="mt-4 p-4 bg-yellow-100 rounded-lg">
-          <p class="text-sm text-yellow-800"><strong>Alternating Format!</strong> Teams alternate between playing (3 rounds) and sitting (3 rounds) during the regular tournament. This keeps everyone engaged while allowing for strategic rest periods.</p>
-        </div>
-        <div class="mt-4 p-4 bg-teal-100 rounded-lg">
-          <p class="text-sm text-teal-800"><strong>Requires:</strong> Two courts running simultaneously with 5-team King of the Court format. Each round is 10-12 minutes long decided by the tournament director. Total tournament time: 6 regular rounds + 2 championship rounds.</p>
-        </div>
-      </div>
+    <!-- Random Order Generator -->
+    <div class="bg-white rounded-lg shadow-md p-6 mt-8 text-center">
+      <h2 class="text-xl font-bold mb-4 text-gray-800">Tournament Setup</h2>
+      <button id="randomizeBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-colors duration-200">
+        🎲 Generate Random Order
+      </button>
+      <p class="text-sm text-gray-600 mt-2">Click to randomize team order for tournament setup</p>
     </div>
 
   </main>
