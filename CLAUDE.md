@@ -29,7 +29,7 @@ This is a simple static HTML/CSS/JavaScript website without a build system or pa
 
 ## Registration System
 
-The registration form uses `mailto:` links to send registration data via email to `homecourtsignup@beachbakyard.com` with CCs to organizers. Payment is handled separately via Venmo (@Daytonscott).
+The registration form uses `mailto:` links to send registration data via email to `homecourtsignup@beachbakyard.com` with CCs to organizers. Payment is handled separately via Venmo (@Darcy-Keith).
 
 ## Development Notes
 
@@ -51,4 +51,4 @@ Since this is a static site with no build system:
 
 Registration emails are sent to:
 - Primary: `homecourtsignup@beachbakyard.com`
-- CC: `dayton.arellano@gmail.com`, `wayne@rwysolutions.com`
+- CC: `darcybeach@yahoo.com`, `dayton.arellano@gmail.com`, `wayne@rwysolutions.com`
