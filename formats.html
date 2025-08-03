@@ -517,6 +517,125 @@
       </div>
     </div>
 
+    <!-- 8 Teams Format - Option 4 -->
+    <div id="format-8-teams-option4" class="bg-white rounded-lg shadow-md p-8">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-center text-purple-800 flex-1">8 Teams Format - Option 4</h2>
+        <button onclick="printFormat('format-8-teams-option4')" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-200 ml-4">
+          🖨️ Print This Format
+        </button>
+      </div>
+      <p class="text-center text-gray-600 mb-4">8 regular rounds + 1 championship round (9 total) using single court with 5 teams playing and 3 teams sitting each round, everyone guaranteed exactly 5 rounds, top 5 teams advance to championship</p>
+      <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-4 text-center">
+        <p class="text-amber-800 text-sm font-medium">⏱️ <strong>Note:</strong> Tournament director will determine the length of each round based on player skill level, time constraints, and weather conditions at their discretion.</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 text-center">
+        <p class="text-blue-800 text-sm font-medium">🎯 <strong>5-Team Court Format:</strong> Traditional King/Queen of the Court with 5 teams per round, optimized rotation to ensure every team plays exactly 5 qualifying rounds.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-blue-50 rounded-lg p-3">
+          <h3 class="text-md font-bold mb-2 text-blue-800">Round 1</h3>
+          <div class="space-y-1 text-xs">
+            <div><strong>Playing:</strong> Teams 1, 2, 3, 4, 5</div>
+            <div class="text-red-600 font-medium"><strong>Sitting:</strong> Teams 6, 7, 8</div>
+          </div>
+        </div>
+        
+        <div class="bg-green-50 rounded-lg p-3">
+          <h3 class="text-md font-bold mb-2 text-green-800">Round 2</h3>
+          <div class="space-y-1 text-xs">
+            <div><strong>Playing:</strong> Teams 1, 6, 7, 8, 2</div>
+            <div class="text-red-600 font-medium"><strong>Sitting:</strong> Teams 3, 4, 5</div>
+          </div>
+        </div>
+        
+        <div class="bg-purple-50 rounded-lg p-3">
+          <h3 class="text-md font-bold mb-2 text-purple-800">Round 3</h3>
+          <div class="space-y-1 text-xs">
+            <div><strong>Playing:</strong> Teams 3, 4, 5, 6, 7</div>
+            <div class="text-red-600 font-medium"><strong>Sitting:</strong> Teams 1, 2, 8</div>
+          </div>
+        </div>
+        
+        <div class="bg-orange-50 rounded-lg p-3">
+          <h3 class="text-md font-bold mb-2 text-orange-800">Round 4</h3>
+          <div class="space-y-1 text-xs">
+            <div><strong>Playing:</strong> Teams 1, 2, 8, 3, 6</div>
+            <div class="text-red-600 font-medium"><strong>Sitting:</strong> Teams 4, 5, 7</div>
+          </div>
+        </div>
+        
+        <div class="bg-red-50 rounded-lg p-3">
+          <h3 class="text-md font-bold mb-2 text-red-800">Round 5</h3>
+          <div class="space-y-1 text-xs">
+            <div><strong>Playing:</strong> Teams 4, 5, 7, 1, 8</div>
+            <div class="text-red-600 font-medium"><strong>Sitting:</strong> Teams 2, 3, 6</div>
+          </div>
+        </div>
+        
+        <div class="bg-yellow-50 rounded-lg p-3">
+          <h3 class="text-md font-bold mb-2 text-yellow-800">Round 6</h3>
+          <div class="space-y-1 text-xs">
+            <div><strong>Playing:</strong> Teams 2, 3, 6, 4, 7</div>
+            <div class="text-red-600 font-medium"><strong>Sitting:</strong> Teams 1, 5, 8</div>
+          </div>
+        </div>
+        
+        <div class="bg-indigo-50 rounded-lg p-3">
+          <h3 class="text-md font-bold mb-2 text-indigo-800">Round 7</h3>
+          <div class="space-y-1 text-xs">
+            <div><strong>Playing:</strong> Teams 1, 5, 8, 2, 4</div>
+            <div class="text-red-600 font-medium"><strong>Sitting:</strong> Teams 3, 6, 7</div>
+          </div>
+        </div>
+        
+        <div class="bg-pink-50 rounded-lg p-3">
+          <h3 class="text-md font-bold mb-2 text-pink-800">Round 8</h3>
+          <div class="space-y-1 text-xs">
+            <div><strong>Playing:</strong> Teams 3, 6, 7, 5, 1</div>
+            <div class="text-red-600 font-medium"><strong>Sitting:</strong> Teams 2, 4, 8</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-8 bg-gray-100 rounded-lg p-6">
+        <h3 class="text-lg font-bold mb-4">Summary by Team:</h3>
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div><strong>Team 1:</strong> Plays rounds 1, 2, 4, 5, 7 (sits rounds 3, 6, 8)</div>
+          <div><strong>Team 2:</strong> Plays rounds 1, 2, 4, 6, 7 (sits rounds 3, 5, 8)</div>
+          <div><strong>Team 3:</strong> Plays rounds 1, 3, 4, 6, 8 (sits rounds 2, 5, 7)</div>
+          <div><strong>Team 4:</strong> Plays rounds 1, 3, 5, 6, 7 (sits rounds 2, 4, 8)</div>
+          <div><strong>Team 5:</strong> Plays rounds 1, 3, 5, 7, 8 (sits rounds 2, 4, 6)</div>
+          <div><strong>Team 6:</strong> Plays rounds 2, 3, 4, 6, 8 (sits rounds 1, 5, 7)</div>
+          <div><strong>Team 7:</strong> Plays rounds 2, 3, 5, 6, 8 (sits rounds 1, 4, 7)</div>
+          <div><strong>Team 8:</strong> Plays rounds 2, 4, 5, 7, 8 (sits rounds 1, 3, 6)</div>
+        </div>
+        <div class="mt-4 p-4 bg-green-100 rounded-lg">
+          <p class="text-sm text-green-800"><strong>Perfect Distribution:</strong> Every team plays exactly 5 rounds and sits exactly 3 rounds. Traditional 5-team King/Queen format ensures maximum competition per round.</p>
+        </div>
+      </div>
+        
+      <!-- Championship Round -->
+      <div class="mt-8 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-6 border-2 border-yellow-300">
+        <h3 class="text-xl font-bold mb-4 text-yellow-800">🏆 Championship Round (Round 9)</h3>
+        <div class="space-y-3">
+          <div class="bg-white rounded-lg p-4">
+            <h4 class="font-bold text-gray-800 mb-2">🌟 Top 5 Teams (by cumulative points from rounds 1-8) compete</h4>
+            <div class="text-sm text-gray-700 space-y-1">
+              <div><strong>Playing:</strong> Top 5 teams based on total points scored</div>
+              <div><strong>Sitting:</strong> Remaining 3 teams</div>
+              <div class="text-lg font-bold text-yellow-800 mt-2">🥇 Team with highest score in Round 9 wins the tournament!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="mt-4 p-4 bg-purple-100 rounded-lg">
+        <p class="text-sm text-purple-800"><strong>Requires:</strong> Single court with traditional 5-team King/Queen of the Court format. Familiar gameplay with optimized 8-team rotation.</p>
+      </div>
+    </div>
+
     <!-- 9 Teams Format -->
     <div id="format-9-teams" class="bg-white rounded-lg shadow-md p-8">
       <div class="flex justify-between items-center mb-6">
