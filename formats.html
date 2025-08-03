@@ -1207,10 +1207,10 @@
   <!-- Print Styles -->
   <style>
     @media print {
-      /* Limit print to only pages 1-2 */
+      /* Single page print settings */
       @page {
         size: letter;
-        margin: 0.5in;
+        margin: 0.3in;
       }
       
       /* Hide everything by default */
@@ -1229,8 +1229,10 @@
         left: 0;
         top: 0;
         width: 100%;
-        max-height: calc(2 * 100vh);
+        max-height: 100vh;
         overflow: hidden;
+        transform: scale(0.85);
+        transform-origin: top left;
       }
       
       /* Hide elements that shouldn't print */
@@ -1238,32 +1240,88 @@
         display: none !important;
       }
       
-      /* Force page break after 2 pages worth of content */
-      .print-section::after {
-        content: "";
-        display: block;
-        height: 0;
-        page-break-after: always;
-        break-after: always;
+      /* Compact print formatting */
+      .print-section h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+        text-align: center;
       }
       
-      /* Basic print formatting */
-      .print-section h2 {
-        font-size: 20px;
-        margin-bottom: 16px;
-        text-align: center;
+      .print-section h3 {
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+      
+      .print-section p {
+        font-size: 10px;
+        margin-bottom: 6px;
+        line-height: 1.2;
       }
       
       .print-section .grid {
         display: grid;
-        gap: 12px;
-        margin-bottom: 16px;
+        gap: 6px;
+        margin-bottom: 8px;
       }
       
       .print-section .rounded-lg {
         border: 1px solid #ccc;
-        padding: 10px;
-        border-radius: 6px;
+        padding: 4px;
+        border-radius: 3px;
+      }
+      
+      .print-section ul {
+        margin: 4px 0;
+        padding-left: 12px;
+      }
+      
+      .print-section li {
+        font-size: 9px;
+        line-height: 1.1;
+        margin-bottom: 1px;
+      }
+      
+      .print-section .text-xs {
+        font-size: 8px;
+      }
+      
+      .print-section .text-sm {
+        font-size: 9px;
+      }
+      
+      /* Compact grid layouts for rounds */
+      .print-section .md\\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .print-section .lg\\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .print-section .lg\\:grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .print-section .lg\\:grid-cols-5 {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      
+      .print-section .xl\\:grid-cols-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .print-section .xl\\:grid-cols-5 {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      
+      /* Championship and summary sections */
+      .print-section .bg-gradient-to-r {
+        background: #fff3cd !important;
+        border: 2px solid #ffc107;
+      }
+      
+      .print-section .bg-gray-100 {
+        background: #f8f9fa !important;
       }
     }
   </style>
