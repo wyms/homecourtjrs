@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>8 Team Format - Hybrid King of the Court</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <section class="py-8 bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-3xl font-extrabold mb-2">8 Teams Format</h1>
+      <p class="text-lg text-gray-600 mb-4">Hybrid King of the Court + Single-Elimination Bracket (7-minute rounds)</p>
+      <a href="rules.html" class="text-blue-600 hover:underline">← Back to Rules</a>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-4 py-12 space-y-12">
+    <div id="format-8-teams" class="bg-white rounded-lg shadow-md p-8">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-center text-purple-800 flex-1">8 Teams Format</h2>
+        <button onclick="printFormat('format-8-teams')" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-200 ml-4">🖨️ Print This Format</button>
+      </div>
+      <p class="text-center text-gray-600 mb-4">5 rounds of King of the Court (7 minutes each) using two courts simultaneously. All teams play all 5 rounds.</p>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 text-center">
+        <p class="text-amber-800 text-sm font-medium">⏱️ <strong>Note:</strong> Tournament director may adjust round timing based on skill level, time, and weather.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-blue-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-blue-800">Round 1</h3>
+          <div class="text-sm space-y-1">
+            <div><strong>Court A:</strong> Teams 1, 2, 3, 4</div>
+            <div><strong>Court B:</strong> Teams 5, 6, 7, 8</div>
+          </div>
+        </div>
+
+        <div class="bg-green-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-green-800">Round 2</h3>
+          <div class="text-sm space-y-1">
+            <div><strong>Court A:</strong> Teams 1, 5, 2, 6</div>
+            <div><strong>Court B:</strong> Teams 3, 7, 4, 8</div>
+          </div>
+        </div>
+
+        <div class="bg-purple-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-purple-800">Round 3</h3>
+          <div class="text-sm space-y-1">
+            <div><strong>Court A:</strong> Teams 1, 7, 4, 6</div>
+            <div><strong>Court B:</strong> Teams 2, 8, 3, 5</div>
+          </div>
+        </div>
+
+        <div class="bg-orange-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-orange-800">Round 4</h3>
+          <div class="text-sm space-y-1">
+            <div><strong>Court A:</strong> Teams 1, 8, 3, 6</div>
+            <div><strong>Court B:</strong> Teams 2, 7, 4, 5</div>
+          </div>
+        </div>
+
+        <div class="bg-red-50 rounded-lg p-4">
+          <h3 class="text-lg font-bold mb-3 text-red-800">Round 5</h3>
+          <div class="text-sm space-y-1">
+            <div><strong>Court A:</strong> Teams 2, 4, 6, 8</div>
+            <div><strong>Court B:</strong> Teams 1, 3, 5, 7</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-gray-100 rounded-lg p-6">
+        <h3 class="text-lg font-bold mb-4">Summary by Team:</h3>
+        <div class="grid md:grid-cols-2 gap-4 text-sm">
+          <div><strong>Team 1:</strong> Plays all 5 rounds (Courts A, A, A, A, B)</div>
+          <div><strong>Team 2:</strong> Plays all 5 rounds (Courts A, A, B, B, A)</div>
+          <div><strong>Team 3:</strong> Plays all 5 rounds (Courts A, B, B, A, B)</div>
+          <div><strong>Team 4:</strong> Plays all 5 rounds (Courts A, B, A, B, A)</div>
+          <div><strong>Team 5:</strong> Plays all 5 rounds (Courts B, A, B, B, B)</div>
+          <div><strong>Team 6:</strong> Plays all 5 rounds (Courts B, A, A, A, A)</div>
+          <div><strong>Team 7:</strong> Plays all 5 rounds (Courts B, B, A, B, B)</div>
+          <div><strong>Team 8:</strong> Plays all 5 rounds (Courts B, B, B, A, A)</div>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg p-6 border-2 border-yellow-300">
+        <h3 class="text-xl font-bold mb-4 text-yellow-800">🏆 Single-Elimination Bracket</h3>
+        <div class="text-sm space-y-3">
+          <p>After the 5 King of the Court rounds, teams are ranked by total points.</p>
+          <p>The top 8 teams are seeded into the following bracket:</p>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left border border-gray-300 bg-white rounded-lg">
+              <thead>
+                <tr class="bg-gray-100 text-gray-800">
+                  <th class="px-4 py-2 border">Quarterfinals</th>
+                  <th class="px-4 py-2 border">Semifinals</th>
+                  <th class="px-4 py-2 border">Finals</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-700">
+                <tr>
+                  <td class="px-4 py-2 border">#1 vs #8</td>
+                  <td class="px-4 py-2 border" rowspan="2">Winner of QF1 vs QF2</td>
+                  <td class="px-4 py-2 border" rowspan="4">🏆 Championship</td>
+                </tr>
+                <tr><td class="px-4 py-2 border">#4 vs #5</td></tr>
+                <tr>
+                  <td class="px-4 py-2 border">#3 vs #6</td>
+                  <td class="px-4 py-2 border" rowspan="2">Winner of QF3 vs QF4</td>
+                </tr>
+                <tr><td class="px-4 py-2 border">#2 vs #7</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="text-lg font-semibold text-yellow-800 mt-4">🏆 Bracket winner is the tournament champion!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
